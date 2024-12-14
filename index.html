@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rig.Dev</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="media/logo.png" sizes="16x16">
+  <link rel="shortcut icon" href="media/logo.png" type="image/x-icon">
+  <meta name="description" content="візитка програмної платформи для Kubernetes">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo"><img src="media/logo.png" alt="logotype">Rig.dev</a>
+      <nav>
+        <ul>
+          <li><a href="documentation.html">Документи</a></li>
+          <li><a href="Price.html">Ціни</a></li>
+          <li><a href="404.html">Про нас</a></li>
+          <li><a href="404.html">Блог</a></li>
+          <li><a href="404.html">Спільнота</a></li>
+        </ul>
+      </nav>
+      <button class="support-button">
+        <i class="fa-brands fa-github"></i>
+        Підтримайте</button>
+    </div>
+  </header>
+  <button class="back-to-top" id="backToTop" title="Повернутися нагору">
+    <i class="fa-solid fa-arrow-up-long" style="color: #969696;"></i>
+  </button>
+  <section class="hero-section">
+    <div class="content">
+      <h1>Платформа програми <br> для Kubernetes</h1>
+      <p>Розгортайте, керуйте та усувайте неполадки хмарних <br>додатків у масштабі, не перевантажуючи своїх інженерів
+        <br>складністю Kubernetes.</p>
+      <div class="buttons">
+        <a href="#" class="btn primary" onclick="openModal()">Документація <i class="fa-solid fa-arrow-right"
+            style="color: #ffffff;"></i></a>
+        <a href="#" class="btn secondary"><i class="fa-brands fa-github" style="color: #262626;"></i>Почнімо</a>
+      </div>
+      <div id="modal" class="modalwind-modal">
+        <div class="modalwind-modal-content">
+          <span class="modalwind-close" onclick="closeModal()">&times;</span>
+          <h2>Деталі документації</h2>
+          <p>Ознайомтеся з нашою детальною документацією, щоб дізнатися більше про розгортання та керування додатками в
+            Kubernetes.</p>
+          <form id="subscriptionForm" action="#" method="post">
+            <label class="modalwind-label" for="name">Ваше ім'я:</label>
+            <input class="modalwind-input" type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+
+            <label class="modalwind-label" for="email">Ваш email:</label>
+            <input class="modalwind-input" type="email" id="email" name="email" placeholder="Введіть вашу email адресу"
+              required>
+
+            <button type="submit" class="modalwind-btn primary">Отримати документацію</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="compatibility">
+        <span>Сумісний З</span>
+        <div class="brendlogos">
+          <a href="#" class="logo-item">
+            <img src="media/googlelogo.png" alt="Google Cloud">
+            <span>Google Cloud</span>
+          </a>
+          <a href="#" class="logo-item">
+            <img src="media/awslogo.png" alt="AWS">
+          </a>
+          <a href="#" class="logo-item">
+            <img src="media/idklogo.png" alt="Azure">
+          </a>
+          <a href="#" class="logo-item">
+            <img src="media/idklogo2.png" alt="DigitalOcean">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="media/mainbackgr.png" alt="Illustration">
+    </div>
+  </section>
+  <section class="features-section">
+    <div class="features-div">
+      <div class="features-header">
+        <p class="small-title">Фіксація K8 Складності</p>
+        <h2>Не дозволяйте складності Kubernetes <br> проникати в команду інженерів</h2>
+      </div>
+      <div class="features-cards">
+        <div class="card">
+          <img src="media/card1.png" alt="Abstract Away K8s Primitives">
+          <h3>Абстрактність K8s Примітивів</h3>
+          <p>Розгортайте, керуйте та налагоджуйте<br> додатки з наскрізним володінням не<br> борючись з перешкодами
+            Kubernetes.</p>
+        </div>
+        <div class="card">
+          <img src="media/card2.png" alt="Proactively Troubleshoot">
+          <h3>Усунення помилок</h3>
+          <p>Визначте проблеми доступності,<br> неправильні конфігурації, брак ресурсів, <br>аномалії K8s та зворотній
+            зв'язок.</p>
+        </div>
+        <div class="card">
+          <img src="media/card3.png" alt="Developer Tools">
+          <h3>Інструменти розробника</h3>
+          <p>Надійний інструментарій, що включає<br> CLI, розширені інтерфейси розробника <br>та інтеграцію CI/CD у
+            хмару.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="graybacksection">
+    <section class="tehn-section">
+      <div class="tehn-header">
+        <div class="tag"> <img src="media/dempl.png" alt="sectionlogo"> Поради щодо конфігурації</div>
+        <h2>Абстракції Kubernetes для розробників</h2>
+        <p>Розгортайте та масштабуйте додатки, не борючись із <br>хитросплетіннями K8s і не витрачаючи дорогоцінний час
+        </p>
+
+        <a href="#" class="tehn-btn">Вивчіть документацію <i class="fa-solid fa-arrow-right"
+            style="color: #131313;"></i></a>
+      </div>
+      <div class="tehn-grid">
+
+        <div class="tehn-row">
+          <div class="tehn-card wide">
+            <div class="card-image">
+              <img src="media/tehn1.png" alt="Wide Card Image 1">
+            </div>
+            <h3>Автомасштабувальник</h3>
+            <p>Плавно ввімкніть вертикальне та горизонтальне автоматичне масштабування з обмеженнями процесора та
+              пам’яті.</p>
+          </div>
+          <div class="tehn-card">
+            <div class="card-image">
+              <img src="media/tehn2.png" alt="Card Image 2">
+            </div>
+            <h3>Мережеві інтерфейси</h3>
+            <p>Керуйте приватними та загальнодоступними мережевими інтерфейсами.</p>
+          </div>
+        </div>
+        <div class="tehn-row">
+          <div class="tehn-card">
+            <div class="card-image">
+              <img src="media/tehn3.png" alt="Card Image 3">
+            </div>
+            <h3>Змінні середовища</h3>
+            <p>Автоматизуйте налаштування ресурсів Kubernetes на рівні контейнера та модуля.</p>
+          </div>
+          <div class="tehn-card wide">
+            <div class="card-image">
+              <img src="media/tehn4.png" alt="Wide Card Image 4">
+            </div>
+            <h3>Файли конфігурації</h3>
+            <p>Наша платформа спрощує конфігураційні файли та їх монтування. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tehn-header">
+        <div class="tag"><img src="media/dempl.png" alt="sectionlogo">Розгортання</div>
+        <h2>Гнучкий механізм розгортання</h2>
+        <p>Розгортайте та керуйте будь-якою програмою в будь-якому провайдері за допомогою Rig і Kubernetes. <br> Rig
+          дозволяє розробникам без проблем розгортати добре налаштовані програми в Kubernetes.</p>
+
+        <a href="#" class="tehn-btn">Вивчіть документацію <i class="fa-solid fa-arrow-right"
+            style="color: #131313;"></i></a>
+      </div>
+      <div class="deployment-grid">
+        <div class="deployment-card">
+          <h3>Архітектура</h3>
+          <p>
+            Незмінні розгортання нових служб.
+            автоматичні налаштування ресурсів.
+          </p>
+          <img src="media/deploym1.png" alt="build">
+        </div>
+        <div class="deployment-card">
+          <h3>Розгортання та відкати</h3>
+          <p>
+            Розгортайте та оновлюйте конфігурації з ефективними відкатами.
+          </p>
+          <img src="media/deploym2.png" alt="rollbacks">
+        </div>
+        <div class="deployment-card">
+          <h3>Інтеграції</h3>
+          <p>
+            Легко інтегруйте в існуючі хмарні стеки розгортання.
+          </p>
+          <img src="media/deploym3.png" alt="integrations">
+        </div>
+      </div>
+
+
+      <div class="troubleshoot-container">
+        <div class="tehn-header">
+          <div class="tag"><img src="media/dempl.png" alt="sectionlogo">Усунення помилок </div>
+          <h2>Усунення помилок зараз простіше</h2>
+          <p>Rig дозволяє розробникам розгортати добре налаштовані програми в Kubernetes <br>набагато простіше та
+            швидше.</p>
+          <a href="#" class="tehn-btn">Вивчіть документацію <i class="fa-solid fa-arrow-right"
+              style="color: #131313;"></i></a>
+        </div>
+        <div class="troubleshoot-features">
+          <div class="feature-item">
+            <img src="media/trouble1.png" alt="insights">
+            <h3 class="feature-title">Доступ</h3>
+            <p class="feature-description">Високорівневий доступ до <br> функцій кластера.</p>
+          </div>
+          <div class="feature-item">
+            <img src="media/trouble2.png" alt="instances">
+            <h3 class="feature-title">Примірники</h3>
+            <p class="feature-description">Статус екземпляра <br>та залежності в <br>одному поданні.</p>
+          </div>
+          <div class="feature-item">
+            <img src="media/trouble3.png" alt="logging">
+            <h3 class="feature-title">Логування</h3>
+            <p class="feature-description">Потокова трансляція <br> комбінованих журналів <br>Capsule між примірниками
+            </p>
+          </div>
+          <div class="feature-item">
+            <img src="media/trouble4.png" alt="checks">
+            <h3 class="feature-title">Перевірка здоров’я</h3>
+            <p class="feature-description">Легко налаштовуйте зонди <br>Liveness та Ready для капсул</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="platform-container">
+      <h2 class="platform-title">Платформа для всієї команди</h2>
+      <div class="platform-tabs">
+        <button class="tab-button active" data-tab="product-teams">Продакшн</button>
+        <button class="tab-button" data-tab="devops-teams">DevOps/Платформа </button>
+        <button class="tab-button" data-tab="engineering-leaders">Інженерні лідери</button>
+      </div>
+      <div class="platform-cards">
+        <div class="card-item" data-tab-content="product-teams">
+          <div class="card-icon"><i class="fa-solid fa-check" style="color: #2E5235;"></i></div>
+          <h3 class="card-title">Від коду до продакшену</h3>
+          <p class="card-description">
+            Дозвольте розробникам самостійно <br>розгортати K8 без будь-яких непотрібних <br>етапів розгортання.
+          </p>
+        </div>
+        <div class="card-item" data-tab-content="product-teams">
+          <div class="card-icon"><i class="fa-solid fa-check" style="color: #2E5235;"></i></div>
+          <h3 class="card-title">Швидкісне усунення помилок</h3>
+          <p class="card-description">
+            Визначте проблеми, неправильні <br>налаштування, брак ресурсів і невдалі <br> розгортання.
+          </p>
+        </div>
+        <div class="card-item" data-tab-content="product-teams">
+          <div class="card-icon"><i class="fa-solid fa-check" style="color: #2E5235;"></i></div>
+          <h3 class="card-title"> Досвід розробника</h3>
+          <p class="card-description">
+            Надайте розробникам потужну <br>платформу, яка відповідає їхнім робочим <br>процесам.
+          </p>
+        </div>
+        <div class="card-item" data-tab-content="devops-teams" style="display: none;">
+          <div class="card-icon"><i class="fa-solid fa-check" style="color: #2E5235;"></i></div>
+          <h3 class="card-title">Ефективні конвеєри CI/CD</h3>
+          <p class="card-description">
+            Автоматизуйте робочі процеси, щоб забезпечити плавне розгортання та керувати складною хмарною
+            інфраструктурою.
+          </p>
+        </div>
+        <div class="card-item" data-tab-content="devops-teams" style="display: none;">
+          <div class="card-icon"><i class="fa-solid fa-check" style="color: #2E5235;"></i></div>
+          <h3 class="card-title">Моніторинг у реальному часі</h3>
+          <p class="card-description">
+            Отримайте уявлення про працездатність і продуктивність програм за допомогою інтегрованих засобів
+            моніторингу.
+          </p>
+        </div>
+        <div class="card-item" data-tab-content="engineering-leaders" style="display: none;">
+          <div class="card-icon"><i class="fa-solid fa-check" style="color: #2E5235;"></i></div>
+          <h3 class="card-title">Стратегічне розуміння</h3>
+          <p class="card-description">
+            Отримуйте доступ до показників і звітів, щоб приймати обґрунтовані рішення щодо продуктивності та цілей
+            команди.
+          </p>
+        </div>
+        <div class="card-item" data-tab-content="engineering-leaders" style="display: none;">
+          <div class="card-icon"><i class="fa-solid fa-check" style="color: #2E5235;"></i></div>
+          <h3 class="card-title">Командна співпраця</h3>
+          <p class="card-description">
+            Дозвольте міжфункціональним командам ефективно працювати за допомогою спільних інструментів і процесів.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="cta-container">
+      <h2 class="cta-title">Готові спробувати Rig?</h2>
+      <div class="cta-options">
+        <div class="cta-option">
+          <h3 class="cta-option-title">Заплануйте дзвінок</h3>
+          <p class="cta-option-description">
+            Ми із задоволенням допомагаємо компаніям.
+          </p>
+          <button class="cta-button">Запланувати</button>
+        </div>
+        <div class="cta-option">
+          <h3 class="cta-option-title">Спробуйте самі</h3>
+          <p class="cta-option-description">
+            Ми максимально спростили Rig.
+          </p>
+          <button class="cta-button">Документація <i class="fa-solid fa-arrow-right"
+              style="color: #ffffff;"></i></button>
+        </div>
+      </div>
+    </div>
+    <footer class="custom-footer">
+      <div class="footer-top">
+        <div class="footer-left">
+          <h2>Приєднуйтесь</h2>
+          <div class="footer-buttons">
+            <a href="#" class="slack-btn"><i class="fa-brands fa-slack"></i>Заходь до нас</a>
+            <a href="#" class="github-btn"><i class="fa-brands fa-github"></i>Дивись на Гітхабі</a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <img src="media/footercomputer.png" alt="Device illustration" class="footer-image">
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="media/footer-logo.png" alt="footer-logo">
+            Rig.dev
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icon github"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+            <a href="#" class=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-icon linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="social-icon slack"><i class="fa-brands fa-slack"></i></a>
+          </div>
+        </div>
+        <div class="newsletter">
+          <p>Підпишіться на розсилку та приєднайтеся до спільноти Rig.dev.</p>
+          <form class="newsletter-form">
+            <input type="text" name="first-name" placeholder="Ваше ім'я" required>
+            <input type="email" name="email" placeholder="Емайл" required>
+            <button type="submit">Підписатись</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-info">
+        <div class="privacy-footer">
+          <p>&copy; 2023 Rig.Dev ApS</p>
+          <a href="#">Обслуговування</a>
+          <a href="#">Конфіденційність</a>
+        </div>
+        <a class="mailwrite" href="mailto:hello@rig.dev">hello@rig.dev</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script/script.js"></script>
+</body>
+
+</html>
